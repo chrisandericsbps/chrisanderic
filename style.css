@@ -1,0 +1,390 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* #F3E9D5; */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: #F3E9D5; */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 95px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  color: #606a20;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #606a20;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+.photo-box img {
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 75%;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media(max-width: 700px) {
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #F3E9D5;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+  }
+
+  nav .fa {
+    display: block;
+    color: #5c4033;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+.course {
+  color: #5c4033;
+  font-weight: 400;
+  padding: 5%;
+  display: flex;
+  flex-direction: row; /* Keep the image and text in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: center;
+  gap: 40px; /* Add some spacing between the image and text */
+  text-align: left; /* Align text to the left */
+}
+
+.course h1 {
+  font-family: "Fugaz One", sans-serif;
+  font-size: 50px;
+  line-height: 0.9;
+  text-align: left; /* Align text to the left */
+  margin: 0; /* Remove default margin */
+}
+
+.course h2 {
+  font-family: "League Gothic", sans-serif;
+  font-size: 120px;
+  line-height: 1;
+  margin: 0; /* Remove default margin */
+  margin-bottom: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.course p {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  margin-top: 20px;
+  margin: 0; /* Remove default margin */
+  text-align: left; /* Align text to the left */
+}
+
+@media (max-width: 768px) {
+  .course {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    text-align: center; /* Center text for smaller screens */
+  }
+
+  .course img {
+    max-width: 80%; /* Adjust image size for mobile */
+    margin-bottom: 20px; /* Add spacing below the image */
+  }
+
+  .course-col {
+    align-items: center; /* Center text on smaller screens */
+  }
+}
+
+.ourPickles {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #F3E9D5;
+}
+
+.ourPickles h1 {
+  font-family: "Anybody", sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  color: #5c4033;
+  padding-bottom: 4%;
+  text-align: center;
+}
+
+div.scroll-container {
+  overflow-x: scroll; /* Allows horizontal scrolling */
+  white-space: nowrap; /* Prevents items from wrapping */
+  display: flex; /* Flexbox for horizontal alignment */
+  gap: 30px; /* Space between each item */
+  padding: 10px 0;
+  align-items: center; /* Center align items vertically */
+  justify-content: start; /* Align items at the start */
+
+  /* Hide scrollbar for various browsers */
+  scrollbar-width: none; /* Firefox */
+}
+
+div.scroll-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.item {
+  display: inline-block; /* Keeps items in one row */
+  text-align: center; /* Centers text below images */
+  text-decoration: none; /* Removes underline from links */
+  color: #5c4033; /* Text color */
+  transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+  cursor: pointer; /* Changes cursor to pointer */
+}
+
+.item:hover {
+  /* transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.item img {
+  width: 500px; /* Image width */
+  height: 500px; /* Image height */
+  object-fit: cover; /* Maintain image aspect ratio */
+  border-radius: 15px; /* Rounded corners */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.item p {
+  padding-top: 5px; /* Space between image and text */
+  margin: 0; /* Remove default margin */
+  font-size: 26px; /* Font size for the text */
+  font-weight: bold; /* Bold text */
+  color: #5c4033; /* Text color */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F3E9D5;
+  /* Match the background color */
+  margin: 0;
+  padding: 0;
+}
+
+.comeHang {
+  padding: 10%;
+  background-image: url("images/greenGarden.jpg");
+  background-size: 180%; 
+  color: #F3E9D5;
+  text-align: center;
+  /* Center the text content */
+}
+
+.comeHang h3 {
+  font-family: "League Gothic", sans-serif;
+  font-size: 9em;
+  margin: 0;
+  padding-bottom: 0.1em;
+}
+
+.rowDates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Center the content horizontally */
+  gap: 5%;
+  /* Space between cards */
+  padding: 20px;
+  /* Add padding around the container */
+}
+
+.cardVisit {
+  border: 3px solid #606a20;
+  background-color: #f7f1db;
+  color: #606a20;
+  border-radius: 20px;
+  /* Rounded corners */
+  width: 200px;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  text-align: left;
+  padding: 20px;
+}
+
+.cardVisit:hover {
+  transform: scale(1.05);
+  /* Slightly increase size on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Increase shadow on hover */
+}
+
+.circle {
+  background-color: #606a20;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.cardContent {
+  margin-top: 60px;
+  /* Space for the circle */
+}
+
+.cardContent h2 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+  font-weight: bold;
+}
+
+.cardContent p {
+  font-size: 16px;
+  margin: 0 0 20px;
+  /* Space below paragraph */
+}
+
+.reviews {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: Arial, sans-serif;
+  /* color: #242424; */
+  color: #F3E9D5;
+  /* color: #5c4033; */
+  /* background-color: #d0d4a3; */
+  background-color: #606a20;
+}
+
+.sliding {
+  padding-top: 20px;
+  /* color: #606a20;
+  background-color: #F3E9D5; */
+  font-size: 24px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.sliding-content {
+  display: inline-block;
+  animation: slide 800s linear infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.sliding span {
+  display: inline-block;
+  padding: 0 0.5rem;
+}
+
+.review-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.reviews h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.review {
+  width: 18%;
+  margin: 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.review h3 {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.review p {
+  margin: 10px 0;
+}
+@media (max-width: 768px) {
+  .scroll-container {
+    gap: 0em; /* Reduce gap between items on smaller screens */
+  }
+
+  .scroll-container .item {
+    width: 90%; /* Full width for smaller screens */
+    margin-bottom: 0em; /* Reduced margin for better use of space */
+  }
+}
