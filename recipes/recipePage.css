@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #F3E9D5;
+}
+
+.header {
+  width: 100%;
+  background-color: #F3E9D5;
+  position: relative;
+}
+
+/* Base styles for the navigation */
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 95px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  font-family: "Inria Sans", sans-serif;
+  font-weight: 700;
+  color: #606a20;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #606a20;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+/* Hide the hamburger icon initially */
+nav .fa {
+  display: none;
+}
+
+@media(max-width: 700px) {
+
+  /* When the screen is smaller than 700px, display the hamburger icon and hide the links */
+  nav .fa {
+    display: block;
+    color: #5c4033;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #F3E9D5;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.3s;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+
+  .nav-links ul li {
+    display: block;
+    margin: 20px 0;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inria Sans", sans-serif;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  /* Thickness of the line */
+  background-color: #5c4033;
+  /* Color of the line */
+  margin: 20px 0;
+  /* Space above and below the line */
+  position: relative;
+}
+
+body {
+  background-color: #F3E9D5;
+  color: #5c4033;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.container {
+  display: flex;
+  max-width: 1400px;
+  /* Increased max-width for a wider layout */
+  margin: 0 auto;
+  padding: 20px;
+  gap: 40px;
+  /* Added gap between the image and text sections */
+}
+
+.image-section {
+  flex: 1;
+}
+
+.cocktail-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.text-section {
+  flex: 1;
+  padding: 30px;
+  border: 1px solid #5c4033;
+  border-radius: 20px;
+  background-color: #F3E9D5;
+}
+
+h1 {
+  font-family: 'Anybody', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.tequila-type {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.tequila-type label {
+  margin-right: 10px;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.ingredients {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.ingredients li {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.prep-instructions {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .text-section {
+    padding: 0;
+  }
+}
