@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,900;1,900&family=Archivo:ital,wght@0,100..900;1,100..900&family=Fugaz+One&family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Archivo:ital,wght@0,100..900;1,100..900&family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,900;1,900&family=Archivo:ital,wght@0,100..900;1,100..900&family=Fugaz+One&family=Inria+Sans:wght@300;400;700&family=League+Gothic&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,900;1,900&family=Archivo:ital,wght@0,100..900;1,100..900&family=Fugaz+One&family=Inria+Sans:wght@300;400;700&family=Inter:wght@100..900&family=League+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav>
+          <a href="../index.html"><img src="../images/logo.svg" alt="Logo"></a>
+          <div class="nav-links" id="navLinks">
+            <ul>
+              <li><a href="products.html">PRODUCTS</a></li>
+              <li><a href="../meetTheTeam/meetTheTeam.html">ABOUT</a></li>
+              <li><a href="../recipes/recipePage.html">PHILIPS RECIPE'S</a></li>
+              <li><a href="../contactUs/contactUs.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <section>
+      <h1 class="section-title">OUR PICKLES</h1>
+      <div class="bestSelling-beers">
+        <div class="bs-card">
+          <div class="bs-card-img" id="bs-img-1"></div>
+          <div class="bs-card-body">
+            <div class="bs-card-header">
+              <a href="../ogDill/ogDill.html" class="bs-card-title">OG DILL</a>
+            </div>
+            <div class="bs-beer-data">
+              <span class="bs-card-brewery para-font">Chris and Eric's Small Batch Pickles</span>
+              <span class="bs-card-brewery para-font">(32 oz)</span>
+            </div>
+            <div class="bs-beer-footer">
+              <span class="price">$8.00</span>
+              <a href="../ogDill/ogDill.html" class="bs-card-btn">MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="bs-card">
+          <div class="bs-card-img" id="bs-img-2"></div>
+          <div class="bs-card-body">
+            <div class="bs-card-header">
+              <a href="../mangoHabanero/mangoHabanero.html" class="bs-card-title">MANGO HABANERO</a>
+            </div>
+            <div class="bs-beer-data">
+              <span class="bs-card-brewery para-font">Chris and Eric's Small Batch Pickles</span>
+              <span class="bs-card-brewery para-font">(32 oz)</span>
+            </div>
+            <div class="bs-beer-footer">
+              <span class="price">$8.00</span>
+              <a href="../mangoHabanero/mangoHabanero.html" class="bs-card-btn">MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="bs-card">
+          <div class="bs-card-img" id="bs-img-3"></div>
+          <div class="bs-card-body">
+            <div class="bs-card-header">
+              <a href="../newBay/newBay.html" class="bs-card-title">NEW BAY</a>
+            </div>
+            <div class="bs-beer-data">
+              <span class="bs-card-brewery para-font">Chris and Eric's Small Batch Pickles</span>
+              <span class="bs-card-brewery para-font">(32 oz)</span>
+            </div>
+            <div class="bs-beer-footer">
+              <span class="price">$8.00</span>
+              <a href="../newBay/newBay.html" class="bs-card-btn">MORE</a>
+            </div>
+          </div>
+        </div>
+          <div class="bs-card">
+            <div class="bs-card-img" id="bs-img-4"></div>
+            <div class="bs-card-body">
+              <div class="bs-card-header">
+                <a href="../hotHoney/hotHoney.html" class="bs-card-title">HOT HONEY</a>
+              </div>
+              <div class="bs-beer-data">
+                <span class="bs-card-brewery para-font">Chris and Eric's Small Batch Pickles</span>
+                <span class="bs-card-brewery para-font">(32 oz)</span>
+              </div>
+              <div class="bs-beer-footer">
+                <span class="price">$8.00</span>
+                <a href="../hotHoney/hotHoney.html" class="bs-card-btn">MORE</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById("navLinks");
+            const overlay = document.getElementById("overlay");
+            if (navLinks.style.right === "0px") {
+                navLinks.style.right = "-200px";
+                overlay.style.display = "none";
+            } else {
+                navLinks.style.right = "0px";
+                overlay.style.display = "block";
+            }
+        }
+
+        function closeMenu() {
+            document.getElementById("navLinks").style.right = "-200px";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
