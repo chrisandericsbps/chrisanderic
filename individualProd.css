@@ -50,6 +50,12 @@ nav img:hover {
   font-size: 20px;
 }
 
+.header {
+  width: 100%;
+  background-color: #F3E9D5;
+  position: relative;
+}
+
 .nav-links ul li a::after {
   content: '';
   width: 0%;

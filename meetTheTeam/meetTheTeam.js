@@ -45,9 +45,10 @@ window.addEventListener("resize", () => {
 });
 
 window.addEventListener("wheel", (e) => {
+  e.preventDefault(); // Prevent default scroll
   target += e.deltaY;
   target = Math.max(0, target);
   target = Math.min(maxScroll, target);
-});
+}, { passive: false });
 
 update();

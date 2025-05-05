@@ -17,22 +17,22 @@
 </head>
 
 <body>
-  <section class = "header">
-    <div class = "photo-box">
+  <header class="header">
     <nav>
-      <a href="index.html"><img src="logo.svg"></a>
-      <div class = "nav-links">
+      <a href="/"><img src="../newlogo.png" alt="Logo"></a>
+      <div class="nav-links" id="navLinks">
         <ul>
-          <li><a href="products/products.html">PRODUCTS</a></li>
-          <li><a href="meetTheTeam/meetTheTeam.html">ABOUT</a></li>
-          <li><a href="recipes/recipePage.html">PHILIPS RECIPE'S</a></li>
-          <li><a href="contactUs/contactUs.html">CONTACT</a></li>
+          <li><a href="../products/products.html">PICKLES</a></li>
+          <li><a href="../meetTheTeam/meetTheTeam.html">PEOPLE</a></li>
+          <li><a href="../recipes/recipePage.html">PHILLIP'S RECIPE CORNER</a></li>
+          <li><a href="../contactUs/contactUs.html">CONTACT</a></li>
         </ul>
       </div>
     </nav>
-      <img src="founders.svg" alt="Founders">
-    </div>
-    </section>
+  </header>
+
+  <div class="overlay" id="overlay" onclick="closeMenu()"></div>
+
   <section class="ourPickles">
       <h1>OUR PICKLES</h1>
       <div class="rowPick">
@@ -56,7 +56,7 @@
           </div>
       </div>
   </section>
-  <section class = "comeHang">
+  <!-- <section class = "comeHang"> This section was supposed to give places we will sell but unsure abt it
     <h3>SEPTEMBER TABLING</h3>
     <div class="rowDates">
       <div class="cardVisit">
@@ -84,7 +84,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="course">
       <div class="course-content">
           <div class="course-col text-col">
@@ -101,41 +101,41 @@
   <section class="reviews">
     <div class="sliding">
       <div class="sliding-content">
-        <span>Two blondes walk into a bar. You’d think one of them would’ve seen it, right? Just kidding, it was an actual bar, not a pun. It’s one of those small-town dives where the only thing older than the decor is Hank, the bartender. We’re talking squeaky floorboards worn smooth from decades of boot traffic, a neon Miller sign flickering in and out of consciousness like a hungover firefly, and an old jukebox that needs a good slap to play anything other than Johnny Cash. Yes, it’s that kind of place.
-        Anyway, our pink-clad ladies make their way to the bar and order two vodka sours—don’t ask me why. They’re tipsy, cheerful, and deep into a conversation about the state of the economy. Here’s a little snippet for you:
-        “Oh my god, like, the markets are so crazy right now,” one says, nearly sloshing her drink. “Like, mortgage rates are at an all-time high, I can’t even—”
-        “Literally!” her friend interrupts, nodding so hard she almost loses an earring. “Jerome better lower rates, like, ASAP, or I’m just—”
-        Yes, the conversation is as riveting as a financial advisor’s holiday newsletter, but it’s suddenly interrupted when the saloon doors swing open. You know the ones—creaky, wooden, just the right amount of dramatic entrance. They slam shut behind a tall figure in a black duster, hat pulled low, looking like he’s here to ask for a strong drink or to reclaim his stolen cattle.
+        <span>Two blondes walk into a bar. You'd think one of them would've seen it, right? Just kidding, it was an actual bar, not a pun. It's one of those small-town dives where the only thing older than the decor is Hank, the bartender. We're talking squeaky floorboards worn smooth from decades of boot traffic, a neon Miller sign flickering in and out of consciousness like a hungover firefly, and an old jukebox that needs a good slap to play anything other than Johnny Cash. Yes, it's that kind of place.
+        Anyway, our pink-clad ladies make their way to the bar and order two vodka sours—don't ask me why. They're tipsy, cheerful, and deep into a conversation about the state of the economy. Here's a little snippet for you:
+        "Oh my god, like, the markets are so crazy right now," one says, nearly sloshing her drink. "Like, mortgage rates are at an all-time high, I can't even—"
+        "Literally!" her friend interrupts, nodding so hard she almost loses an earring. "Jerome better lower rates, like, ASAP, or I'm just—"
+        Yes, the conversation is as riveting as a financial advisor's holiday newsletter, but it's suddenly interrupted when the saloon doors swing open. You know the ones—creaky, wooden, just the right amount of dramatic entrance. They slam shut behind a tall figure in a black duster, hat pulled low, looking like he's here to ask for a strong drink or to reclaim his stolen cattle.
         This, dear reader, is Eric.
-        Eric isn’t just any cowboy strolling in for a whiskey on a chilly night. His boots thud against the wooden floor as he steps up to the bar, a bundle wrapped in an oil-stained cloth cradled under his arm. With a dust-covered coat and a face shaded by the brim of his hat, the first thing you’d notice when he lifts his head is his beard—a thick brown one with specks of red scattered through it, like the last embers of a dying fire. He looks like the kind of man who’s been through a few rounds with life and has the grit to prove it.
-        Eric places the bundle on the bar with a heavy thud. Hank, who’s been wiping the same glass for about ten minutes now, raises an eyebrow.
-        “Back again, eh, Eric?” Hank drawls, though if you listen closely, you might catch a note of concern—or indigestion. It’s hard to tell with Hank.
-        Eric peels back the cloth, revealing a large jar filled with cloudy liquid and a shape inside that, at first glance, could be mistaken for a very bloated, very ugly pickle. But if you’re thinking this is some artisan, small-batch pickle made by a hipster named Chris, think again. No, this thing’s glowing faintly, like it’s been exposed to nuclear waste or perhaps a bad relationship.
-        The blondes glance over. “Is that...a pickle?” one of them whispers.
-        Eric shoots them a look. “Not just any pickle,” he says, with a kind of dramatic pause that makes you wonder if he practices in the mirror. “The Pickle Beast.”
-        The girls blink, their confusion evident, but Hank lets out a low whistle. “The Pickle Beast? The one folks say slithers around at night, draining cattle dry and leaving behind a trail of brine?”
-        “Yes,” Eric replies, his voice rough like he gargles gravel in the morning. “It’s been terrorizing the countryside, and it’s getting stronger. Last night, it tried to drag old Farmer Miller right out of his bedroom window. If I don’t stop it soon, we’re gonna be up to our ears in brine—and not the kind you put on fries.”
-        The girls giggle nervously, but Eric isn’t here to educate them on the finer points of monster hunting. He grabs his jar, tips his hat to Hank, and makes for the door.
+        Eric isn't just any cowboy strolling in for a whiskey on a chilly night. His boots thud against the wooden floor as he steps up to the bar, a bundle wrapped in an oil-stained cloth cradled under his arm. With a dust-covered coat and a face shaded by the brim of his hat, the first thing you'd notice when he lifts his head is his beard—a thick brown one with specks of red scattered through it, like the last embers of a dying fire. He looks like the kind of man who's been through a few rounds with life and has the grit to prove it.
+        Eric places the bundle on the bar with a heavy thud. Hank, who's been wiping the same glass for about ten minutes now, raises an eyebrow.
+        "Back again, eh, Eric?" Hank drawls, though if you listen closely, you might catch a note of concern—or indigestion. It's hard to tell with Hank.
+        Eric peels back the cloth, revealing a large jar filled with cloudy liquid and a shape inside that, at first glance, could be mistaken for a very bloated, very ugly pickle. But if you're thinking this is some artisan, small-batch pickle made by a hipster named Chris, think again. No, this thing's glowing faintly, like it's been exposed to nuclear waste or perhaps a bad relationship.
+        The blondes glance over. "Is that...a pickle?" one of them whispers.
+        Eric shoots them a look. "Not just any pickle," he says, with a kind of dramatic pause that makes you wonder if he practices in the mirror. "The Pickle Beast."
+        The girls blink, their confusion evident, but Hank lets out a low whistle. "The Pickle Beast? The one folks say slithers around at night, draining cattle dry and leaving behind a trail of brine?"
+        "Yes," Eric replies, his voice rough like he gargles gravel in the morning. "It's been terrorizing the countryside, and it's getting stronger. Last night, it tried to drag old Farmer Miller right out of his bedroom window. If I don't stop it soon, we're gonna be up to our ears in brine—and not the kind you put on fries."
+        The girls giggle nervously, but Eric isn't here to educate them on the finer points of monster hunting. He grabs his jar, tips his hat to Hank, and makes for the door.
 
-        “If I’m not back by dawn, you know what to do,” he says over his shoulder.
-        “Bury your tab?” Hank grunts.
-        “Tell my horse I died a hero,” Eric replies. With that, he disappears into the night, leaving the blondes to wonder if they’ve just hallucinated the whole conversation or if maybe they should switch to drinking water.
-        The moon hangs in the sky like an oversized cheese wheel—because we’re in the Midwest, and here, we take dairy very seriously. Eric’s boots crunch on the gravel road as he follows a trail of glowing, slick brine to the Miller farm. The place looks abandoned—well, it looked abandoned before, too, but now it’s got that haunted house vibe. The barn looms ahead, smelling distinctly of vinegar and doom.
-        Eric unsheathes his hunting knife, its blade etched with strange symbols that look suspiciously like doodles. According to the old books—and by “old books,” I mean a questionable pamphlet from a local fair—these marks can weaken cursed pickles and assorted enchanted vegetables.
-        He approaches the barn cautiously, and then, with a creak and a bang louder than Hank’s hangover, the doors burst open. Out slithers the Pickle Beast, a monstrosity that could only be described as...well, like if a pickle decided to hit the gym and grow tentacles. Its body is slick and bumpy, covered in what can only be described as brine acne. Two glowing green eyes stare out from its swollen mass, and its maw opens wide to reveal rows of jagged, salt-crystal teeth.
-        Before you ask, yes, it does have teeth. I don’t know why. I don’t make the rules.
-        Eric braces himself as the creature lunges, its limbs flailing like a drunk octopus. He dodges to the side, his knife slashing at one of the wriggling appendages. The blade sinks into the Pickle Beast’s flesh—or whatever you’d call it—but the wound starts to heal almost instantly, the brine sealing over the cut.
-        The beast swings around, spitting a jet of acidic brine right at him. Eric dives out of the way, the liquid sizzling against the dirt where he’d just stood. “Really?” he mutters under his breath. “You remind me of my ex-wife.”
+        "If I'm not back by dawn, you know what to do," he says over his shoulder.
+        "Bury your tab?" Hank grunts.
+        "Tell my horse I died a hero," Eric replies. With that, he disappears into the night, leaving the blondes to wonder if they've just hallucinated the whole conversation or if maybe they should switch to drinking water.
+        The moon hangs in the sky like an oversized cheese wheel—because we're in the Midwest, and here, we take dairy very seriously. Eric's boots crunch on the gravel road as he follows a trail of glowing, slick brine to the Miller farm. The place looks abandoned—well, it looked abandoned before, too, but now it's got that haunted house vibe. The barn looms ahead, smelling distinctly of vinegar and doom.
+        Eric unsheathes his hunting knife, its blade etched with strange symbols that look suspiciously like doodles. According to the old books—and by "old books," I mean a questionable pamphlet from a local fair—these marks can weaken cursed pickles and assorted enchanted vegetables.
+        He approaches the barn cautiously, and then, with a creak and a bang louder than Hank's hangover, the doors burst open. Out slithers the Pickle Beast, a monstrosity that could only be described as...well, like if a pickle decided to hit the gym and grow tentacles. Its body is slick and bumpy, covered in what can only be described as brine acne. Two glowing green eyes stare out from its swollen mass, and its maw opens wide to reveal rows of jagged, salt-crystal teeth.
+        Before you ask, yes, it does have teeth. I don't know why. I don't make the rules.
+        Eric braces himself as the creature lunges, its limbs flailing like a drunk octopus. He dodges to the side, his knife slashing at one of the wriggling appendages. The blade sinks into the Pickle Beast's flesh—or whatever you'd call it—but the wound starts to heal almost instantly, the brine sealing over the cut.
+        The beast swings around, spitting a jet of acidic brine right at him. Eric dives out of the way, the liquid sizzling against the dirt where he'd just stood. "Really?" he mutters under his breath. "You remind me of my ex-wife."
         The battle continues in a whirlwind of salt, slime, and regret. Eric is getting tired, his muscles aching from dodging briny blasts and fending off vine-covered limbs. The creature seems to be enjoying itself—if a pickle can feel joy—it's glowing eyes alight with a sadistic glee.
-        Just when it seems like the end is nigh, Eric pulls out the oil-stained jar from earlier. It’s filled with a concoction he brewed up from sacred herbs, sea salt, and a splash of whiskey for good measure. It’s what some might call “plan B,” and what others might call “I sure hope this works.”
-        He hurls the jar at the Pickle Beast, the glass shattering against its slimy hide. The liquid seeps into the monster’s flesh, and for a moment, nothing happens. Then, with a sound like a deflating balloon mixed with a banshee’s wail, the creature starts to shrink. It writhes, screeching in a way that suggests it’s not used to being out-pickled, and collapses into a heap of mush.
-        Eric wastes no time, stabbing his knife into the still-twitching pile for good measure. “Stay down, you overgrown gherkin,” he grunts, catching his breath.
-        With the Pickle Beast defeated and its remains scooped into jars (yes, more jars—Eric is surprisingly good at finding jars when needed), he heads back to town. He partners up with a local alchemist, who’s an expert in turning weird stuff into slightly less weird, usable stuff. Together, they distill the creature’s brine into a potent elixir, which Eric then uses to pickle a fresh batch of cucumbers.
+        Just when it seems like the end is nigh, Eric pulls out the oil-stained jar from earlier. It's filled with a concoction he brewed up from sacred herbs, sea salt, and a splash of whiskey for good measure. It's what some might call "plan B," and what others might call "I sure hope this works."
+        He hurls the jar at the Pickle Beast, the glass shattering against its slimy hide. The liquid seeps into the monster's flesh, and for a moment, nothing happens. Then, with a sound like a deflating balloon mixed with a banshee's wail, the creature starts to shrink. It writhes, screeching in a way that suggests it's not used to being out-pickled, and collapses into a heap of mush.
+        Eric wastes no time, stabbing his knife into the still-twitching pile for good measure. "Stay down, you overgrown gherkin," he grunts, catching his breath.
+        With the Pickle Beast defeated and its remains scooped into jars (yes, more jars—Eric is surprisingly good at finding jars when needed), he heads back to town. He partners up with a local alchemist, who's an expert in turning weird stuff into slightly less weird, usable stuff. Together, they distill the creature's brine into a potent elixir, which Eric then uses to pickle a fresh batch of cucumbers.
 
-        Soon, people are lining up for his “Miracle Pickles.” Turns out, they’re not only delicious, but they also cure a whole range of ailments—from gout to chronic fatigue, and even that weird rash you get from swimming in the town pond.
-        People start calling him “The Pickle Saint.” Eric doesn’t care much for the title, but he has to admit, he enjoys seeing folks line up for something that isn’t a bar brawl or a pie-eating contest.
+        Soon, people are lining up for his "Miracle Pickles." Turns out, they're not only delicious, but they also cure a whole range of ailments—from gout to chronic fatigue, and even that weird rash you get from swimming in the town pond.
+        People start calling him "The Pickle Saint." Eric doesn't care much for the title, but he has to admit, he enjoys seeing folks line up for something that isn't a bar brawl or a pie-eating contest.
         And as for the Pickle Beast? Eric keeps one jar of its essence on his mantle as a reminder of that fateful night. Not for sentimental reasons, but because it glows faintly in the dark and makes for a great conversation starter.
-        So, the next time you’re enjoying a pickle, just remember—you’re not just eating a snack. You’re eating the stuff of legends.
+        So, the next time you're enjoying a pickle, just remember—you're not just eating a snack. You're eating the stuff of legends.
 
 </span>
       </div>
@@ -146,48 +146,45 @@
         <span>THE</span>
         <span>GOOD</span>
         <span>STUFF</span>
-        <span>★</span>
         <span>LET'S</span>
         <span>TALK</span>
         <span>ABOUT</span>
         <span>THE</span>
         <span>GOOD</span>
         <span>STUFF</span>
-        <span>★</span>
         <span>LET'S</span>
         <span>TALK</span>
         <span>ABOUT</span>
         <span>THE</span>
         <span>GOOD</span>
         <span>STUFF</span>
-        <span>★</span>
       </div>
     </div>
 
     <div class="review-container">
           <div class="review">
-            <h3>★★★★★</h3>
+            <h3>5/5</h3>
             <p>"Chris and Eric's Small Batch Pickles are a game changer! The flavors are so unique and vibrant. My favorite is the Hot Honey; it has just the right amount of sweetness and spice. Plus, the pickles are always fresh and crunchy. Chris and Eric are incredibly friendly and passionate about their craft. Highly recommend!"</p>
             <h3>PICKLOUS CAGE</h3>
           </div>
           <div class="review">
-            <h3>★★★★★</h3>
+            <h3>5/5</h3>
             <p>"I'm a pickle enthusiast, and I can confidently say these are some of the best I've ever had. The Mango Habanero pickles are out of this world. You can taste the care and quality in every bite. Chris and Eric are always so nice and welcoming when you stop by. This is my new go-to for pickles!"</p>
             <h3>MEEK DILL</h3>
             <!-- DILLARY CLINTON -->
           </div>
           <div class="review">
-            <h3>★★★★★</h3>
+            <h3>5/5</h3>
             <p>"I was never a big fan of pickles until I tried Chris and Eric's. Now I'm hooked! The OG Dill pickles are classic and perfect on sandwiches. The customer service is excellent too; Chris and Eric always make you feel like part of the family. These guys really know what they're doing!"</p>
             <h3>DILL MURRAY</h3>
           </div>
           <div class="review">
-            <h3>★★★★★</h3>
+            <h3>5/5</h3>
             <p>"Hands down the best pickles I've ever tasted. The Hot Honey flavor is a must-try. Every jar is packed with flavor and the perfect crunch. It's clear that Chris and Eric put a lot of love and effort into their craft, and they are always so friendly and welcoming. Can't recommend them enough!"</p>
             <h3>BRINE CRANSTON</h3>
           </div>
     </div>
-    <p>ChatGPT can make mistakes. Check important info.</p>
+    <!-- <p>ChatGPT can make mistakes. Check important info.</p> -->
   </section>
   <!-- <section class = "PhilipsRec">
     <h1>Phillip's Recipe Corner</h1>
@@ -210,10 +207,9 @@
             </div>
           </div>
         </div>
-        <h3>Ayman’s Katsu Chicken Sandwiches</h3>
+        <h3>Ayman's Katsu Chicken Sandwiches</h3>
       </div>
   </section> -->
-  <div class="elfsight-app-0c0a400e-fd36-4181-ba44-0530116ec98b" data-elfsight-app-lazy></div>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2" async defer></script>
 </body>

@@ -14,6 +14,11 @@ header {
   background-size: cover;
   position: relative;
 }
+/* .header {
+  width: 100%;
+  background-color: #F3E9D5;
+  position: relative;
+} */
 
 nav {
   display: flex;
